@@ -1,0 +1,17 @@
+{
+  "name": "fundamentos-node-platzi-master",
+  "version": "1.0.0",
+  "description": "fundamentos de node",
+  "main": "entorno.js",
+  "dependencies": {
+    "npm": "^6.14.9",
+    "pm2": "^4.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon conceptos/entorno.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
