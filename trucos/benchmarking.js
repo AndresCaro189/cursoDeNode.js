@@ -1,3 +1,9 @@
+/**
+    La función console.time(‘nombre’) inicia un temporizador que se puede usar para rastrear cuánto tiempo dura una operación.
+    el temporizador sera identificado por el nombre dado a la consola. Ese mismo nombre se utilizara cuando se llame a console.
+    timeEnd(‘nombre’) para detener el temporizador y obtener el tiempo demorado durante el proceso.
+ */
+
 console.time('todo');
 let suma = 0;
 console.time('bucle');

@@ -4,6 +4,7 @@
   "description": "fundamentos de node",
   "main": "entorno.js",
   "dependencies": {
+    "bcrypt": "^5.0.0",
     "npm": "^6.14.9",
     "pm2": "^4.5.0"
   },

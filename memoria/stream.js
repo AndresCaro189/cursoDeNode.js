@@ -1,3 +1,11 @@
+/*
+    ** Stream**
+    Podría decirse que un Stream es el proceso de ir consumiendo datos al tiempo en que se reciben. Por ejemplo, cuando vemos un
+    video en Youtube estamos consumiendo datos por medio de streaming (readable stream, porque solo podemos ver los videos mas no
+    editarlos) ya que lo vemos al mismo tiempo en que este se está descargando. de lo contrario habría que esperar a que se
+    descargue el video por completo para poder verlo.
+*/
+
 const fs = require('fs');
 const stream = require('stream');
 const util = require('util');

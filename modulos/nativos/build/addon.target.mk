@@ -7,12 +7,8 @@ DEFS_Debug := \
 	'-DUSING_UV_SHARED=1' \
 	'-DUSING_V8_SHARED=1' \
 	'-DV8_DEPRECATION_WARNINGS=1' \
-	'-DV8_DEPRECATION_WARNINGS' \
-	'-DV8_IMMINENT_DEPRECATION_WARNINGS' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
-	'-DOPENSSL_NO_PINSHARED' \
-	'-DOPENSSL_THREADS' \
 	'-DBUILDING_NODE_EXTENSION' \
 	'-DDEBUG' \
 	'-D_DEBUG' \
@@ -26,6 +22,7 @@ CFLAGS_Debug := \
 	-Wextra \
 	-Wno-unused-parameter \
 	-m64 \
+	-fPIC \
 	-g \
 	-O0
 
@@ -39,25 +36,21 @@ CFLAGS_CC_Debug := \
 	-std=gnu++1y
 
 INCS_Debug := \
-	-I/home/carlos/.cache/node-gyp/12.11.1/include/node \
-	-I/home/carlos/.cache/node-gyp/12.11.1/src \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/openssl/config \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/openssl/openssl/include \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/uv/include \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/zlib \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/v8/include
+	-I/home/andresc/.cache/node-gyp/10.19.0/include/node \
+	-I/home/andresc/.cache/node-gyp/10.19.0/src \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/openssl/config \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/openssl/openssl/include \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/uv/include \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/zlib \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/v8/include
 
 DEFS_Release := \
 	'-DNODE_GYP_MODULE_NAME=addon' \
 	'-DUSING_UV_SHARED=1' \
 	'-DUSING_V8_SHARED=1' \
 	'-DV8_DEPRECATION_WARNINGS=1' \
-	'-DV8_DEPRECATION_WARNINGS' \
-	'-DV8_IMMINENT_DEPRECATION_WARNINGS' \
 	'-D_LARGEFILE_SOURCE' \
 	'-D_FILE_OFFSET_BITS=64' \
-	'-DOPENSSL_NO_PINSHARED' \
-	'-DOPENSSL_THREADS' \
 	'-DBUILDING_NODE_EXTENSION'
 
 # Flags passed to all source files.
@@ -68,6 +61,7 @@ CFLAGS_Release := \
 	-Wextra \
 	-Wno-unused-parameter \
 	-m64 \
+	-fPIC \
 	-O3 \
 	-fno-omit-frame-pointer
 
@@ -81,13 +75,13 @@ CFLAGS_CC_Release := \
 	-std=gnu++1y
 
 INCS_Release := \
-	-I/home/carlos/.cache/node-gyp/12.11.1/include/node \
-	-I/home/carlos/.cache/node-gyp/12.11.1/src \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/openssl/config \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/openssl/openssl/include \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/uv/include \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/zlib \
-	-I/home/carlos/.cache/node-gyp/12.11.1/deps/v8/include
+	-I/home/andresc/.cache/node-gyp/10.19.0/include/node \
+	-I/home/andresc/.cache/node-gyp/10.19.0/src \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/openssl/config \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/openssl/openssl/include \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/uv/include \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/zlib \
+	-I/home/andresc/.cache/node-gyp/10.19.0/deps/v8/include
 
 OBJS := \
 	$(obj).target/$(TARGET)/hola.o
