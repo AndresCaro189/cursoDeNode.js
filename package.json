@@ -5,8 +5,10 @@
   "main": "entorno.js",
   "dependencies": {
     "bcrypt": "^5.0.0",
+    "electron": "^11.1.0",
     "npm": "^6.14.9",
-    "pm2": "^4.5.0"
+    "pm2": "^4.5.0",
+    "puppeteer": "^5.5.0"
   },
   "devDependencies": {},
   "scripts": {
